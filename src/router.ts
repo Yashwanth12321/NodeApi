@@ -16,7 +16,7 @@ router.put('/product/:id', body('name').isString(), handleInputErrors, (req, res
 })
 router.post('/product', body('name').isString(), handleInputErrors, createProduct)
 router.delete('/product/:id', deleteProduct)
-
+   
 /**
  * Update
  */
